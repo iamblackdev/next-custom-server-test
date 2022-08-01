@@ -1,0 +1,45 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\HABIB\.node\corepack\yarn\1.22.15\bin\yarn.js
+
+PATH: 
+  C:\Users\HABIB\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\HABIB\bin;C:\Python27;C:\Python27\Scripts;C:\Python39\Scripts;C:\Python39;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\xampp\php;C:\xampp\mysql\bin;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Users\HABIB\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs;C:\Users\HABIB\AppData\Roaming\npm;C:\Users\HABIB\AppData\Local\Yarn\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\HABIB\AppData\Local\Microsoft\WindowsApps;C:\Users\HABIB\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HABIB\AppData\Roaming\Composer\vendor\bin;C:\Program Files\nodejs;C:\Users\HABIB\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\HABIB\AppData\Roaming\npm;C:\Users\HABIB\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "heroku-nextjs-custom-server-express",
+    "version": "3.0.0",
+    "description": "Deploy Next.js server-side React apps using a custom Express server to Heroku",
+    "scripts": {
+      "dev": "node server.js -p $PORT",
+      "build": "next build",
+      "start": "NODE_ENV=production node server.js -p $PORT"
+    },
+    "dependencies": {
+      "express": "^4.16.4",
+      "next": "^8.0.3",
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6"
+    },
+    "engines": {
+      "node": "16.13.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
