@@ -53,13 +53,13 @@ if (!dev && cluster.isMaster) {
     );
 
     // Example server-side routing
-    server.get("/a", (req, res) => {
+    server.get("/api/a", (req, res) => {
       // return nextApp.render(req, res, '/b', req.query)
       res.status(200).send("route a");
     });
 
     // Example server-side routing
-    server.get("/b", (req, res) => {
+    server.get("/api/b", (req, res) => {
       // return nextApp.render(req, res, '/a', req.query)
       res.status(200).send("route b");
     });
