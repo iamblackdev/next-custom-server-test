@@ -57,11 +57,19 @@ if (!dev && cluster.isMaster) {
       // return nextApp.render(req, res, '/b', req.query)
       res.status(200).send("route a");
     });
+    server.post("/api/a", (req, res) => {
+      res.status(200).send("Post req");
+    });
 
     // Example server-side routing
     server.get("/api/b", (req, res) => {
       // return nextApp.render(req, res, '/a', req.query)
       res.status(200).send("route b");
+    });
+
+    server.post("/api/b", (req, res) => {
+      // return nextApp.render(req, res, '/a', req.query)
+      res.status(200).send("post req");
     });
 
     // Default catch-all renders Next app
